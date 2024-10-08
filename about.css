@@ -1,35 +1,48 @@
 nav .abt_contact{
     left: 10%;
 }
-.scrollable_content{
-    height: 400vh;
-    overflow-y: scroll;
+.section_abt{
+    display: flex;
+    flex-direction: column;
+
+}
+.scrollable_content {
+    height: 500px;
+    width: 97%; /* Adjust to your desired height */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    padding: 20px;
+    margin: 3% 3%;
+    
+}
+.scrollable_content div{
+    height: 90%;
+    width: 60%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255,0.1);
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
     margin: 5% 20%;
     border-radius: 20px;
     z-index: 90;
-    backdrop-filter:blur(2px);
-    box-shadow:3px 3px 6px black;
-    border: rgb(255, 255, 255,0.7);
+    backdrop-filter: blur(2px); /* Optional: adds a background blur effect */
+    box-shadow: 3px 3px 6px black;
+    border: rgba(255, 255, 255, 0.7); /* Semi-transparent white border */
     position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     
-
 }
 
 .scrollable_content::-webkit-scrollbar {
-    margin: 5px;
-    width: 8px;
-    overflow-y: scroll;
-    
+    margin: 10px;
+    width: 1px; /* Thin scrollbar width */
+
 }
-
-
-.scrollable_content::-webkit-scrollbar-track {     
-    border-radius: 10px;
+.scrollable_content::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0;    
+    box-shadow: 1px 1px 2px #fca61f;
 }
-
 .scrollable_content::-webkit-scrollbar-thumb {
     background-color: #ad0e0e; 
     border-radius: 10px;
@@ -42,6 +55,7 @@ nav .abt_contact{
 
 /* For Firefox */
 .scrollable_content {
-    scrollbar-width: thin;  /* Set the width of the scrollbar */
-    scrollbar-color: #131212 rgb(255,255,255,0.7);  /* Scrollbar color and track color */
+    scrollbar-width: thin; 
+    scrollbar-color: #fca61f rgba(255, 255, 255, 0.2);
+
 }

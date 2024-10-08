@@ -44,3 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+let aboutpage=document.querySelector('.scrollable_content');
+window.getComputedStyle(aboutpage).overflowY= scroll;
+

@@ -1,0 +1,49 @@
+nav .abt_contact{
+    left: 10%;
+}
+.scrollable_content{
+    height: 400vh;
+    overflow-y: scroll;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255,0.1);
+    margin: 5% 20%;
+    border-radius: 20px;
+    z-index: 90;
+    backdrop-filter:blur(2px);
+    box-shadow:3px 3px 6px black;
+    border: rgb(255, 255, 255,0.7);
+    position: relative;
+    
+
+}
+
+.scrollable_content::-webkit-scrollbar {
+    margin: 5px;
+    width: 8px;
+    overflow-y: scroll;
+    
+}
+
+
+.scrollable_content::-webkit-scrollbar-track {     
+    border-radius: 10px;
+}
+
+
+.scrollable_content::-webkit-scrollbar-thumb {
+    background-color: #ad0e0e; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.scrollable_content::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* For Firefox */
+.scrollable_content {
+    scrollbar-width: thin;  /* Set the width of the scrollbar */
+    scrollbar-color: #131212 rgb(255,255,255,0.7);  /* Scrollbar color and track color */
+}

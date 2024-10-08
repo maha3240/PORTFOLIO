@@ -44,9 +44,9 @@ nav .abt_contact{
     box-shadow: 1px 1px 2px #fca61f;
 }
 .scrollable_content::-webkit-scrollbar-thumb {
-    background-color: #ad0e0e; 
-    border-radius: 10px;
-    cursor: pointer;
+    background-color: #FCA61F; /* Red color for the scrollbar thumb */
+    border-radius: 16px;
+     /* Slight rounded corners for the thumb */
 }
 
 .scrollable_content::-webkit-scrollbar-thumb:hover {

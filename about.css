@@ -9,10 +9,12 @@ nav .abt_contact{
 .scrollable_content {
     height: 500px;
     width: 97%; /* Adjust to your desired height */
-    overflow-y: auto; /* Enable scrolling if content overflows */
+     /* Enable scrolling if content overflows */
     padding: 20px;
     margin: 3% 3%;
-    
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory Y;
 }
 .scrollable_content div{
     height: 90%;
@@ -32,15 +34,18 @@ nav .abt_contact{
     flex-grow: 1;
     
 }
-
+.scrollable_content::-webkit-scrollbar-button{
+    display: none;
+}
 .scrollable_content::-webkit-scrollbar {
-    margin: 10px;
-    width: 1px; /* Thin scrollbar width */
+    width: 1px;
+    border-radius: 1PX;
+    border-radius: 5%;
 
 }
 .scrollable_content::-webkit-scrollbar-track {
     background: transparent;
-    border-radius: 0;    
+    border-radius: 5%;    
     box-shadow: 1px 1px 2px #fca61f;
 }
 .scrollable_content::-webkit-scrollbar-thumb {
@@ -58,4 +63,8 @@ nav .abt_contact{
     scrollbar-width: thin; 
     scrollbar-color: #fca61f rgba(255, 255, 255, 0.2);
 
+}
+.links a.active{
+    color: #fca61f;
+    text-shadow: 1px 1px #fca61f ;
 }

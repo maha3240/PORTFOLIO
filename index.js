@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     
     let menuIcon = document.querySelector(".hamburg");
@@ -45,6 +44,31 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-let aboutpage=document.querySelector('.scrollable_content');
-window.getComputedStyle(aboutpage).overflowY= scroll;
+let divs = document.querySelectorAll('section.div');
+let navlinks = document.querySelectorAll('nav a');
+
+window.onscroll = () => {
+    let top = window.scrollY;  // Get the current scroll position
+    divs.forEach(sec => {
+        let offset = sec.offsetTop;  // Get the offset of the section
+        let height = sec.offsetHeight;  // Get the height of the section
+        let id = sec.getAttribute('id');  // Get the id of the section
+
+        // Check if the section is in the viewport
+        if (top >= offset && top < offset + height) {
+            // Remove 'active' class from all nav links
+            navlinks.forEach(links => {
+                links.classList.remove('active');
+            });
+
+            // Add 'active' class to the correct nav link based on the id
+            let activeLink = document.querySelector('nav a[href*="' + id + '"]');
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+        }
+    });
+};
+
+
 

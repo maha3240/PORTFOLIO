@@ -15,6 +15,8 @@ nav .abt_contact{
     overflow-y: auto;
     scroll-behavior: smooth;
     scroll-snap-type: mandatory Y;
+    position: relative;
+    top: 14%;
 }
 .scrollable_content div{
     height: 90%;
@@ -22,18 +24,17 @@ nav .abt_contact{
     padding: 20px;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
-    margin: 5% 20%;
+    margin: 5% 20% 7% 20%;
     border-radius: 20px;
     z-index: 90;
-    backdrop-filter: blur(2px); /* Optional: adds a background blur effect */
     box-shadow: 3px 3px 6px black;
     border: rgba(255, 255, 255, 0.7); /* Semi-transparent white border */
     position: relative;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    
+    flex-grow: 1;    
 }
+
 .scrollable_content::-webkit-scrollbar-button{
     display: none;
 }
@@ -64,7 +65,73 @@ nav .abt_contact{
     scrollbar-color: #fca61f rgba(255, 255, 255, 0.2);
 
 }
-.links a.active{
+.active{
     color: #fca61f;
     text-shadow: 1px 1px #fca61f ;
+}
+
+
+#me h1{
+    font-size: 1.6rem;
+    padding: 5px;
+    position: relative;
+    left: 5%;
+    top: 7%;
+    font-style: italic;
+    font-family:'Qwitcher_Gryphen';
+    font-weight: 700;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #111111;
+    margin:10px;
+    width: 80%;
+}
+#me p{
+    font-size: 1rem;
+    font-style: italic;
+    font-family:'Qwitcher_Gryphen';
+    position: relative;
+    left: 5%;
+    top: 7%;
+    width: 90%;
+}
+.p-info{
+    position: relative;
+    top: 20%;
+    left: 5%;
+    background:transparent;
+    border: none;
+    box-shadow: none;
+    flex-direction: row;
+    line-height: 10px;
+}
+.attributes{
+    font-size:0.9rem;
+    position: relative;
+    font-style: italic;
+    text-align: justify;
+    color: whitesmoke;
+    text-shadow: #111111;
+}
+
+.attributes span{
+    line-height: 31px;
+    font-family: 'Qwitcher_Gryphrn';
+    font-style: italic;
+}
+.attributes span i{
+    margin: 0 15px;
+    text-align:justify;
+}
+.image_abt img{
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    position: relative;
+    left: 54%;
+    bottom: 50%;
+    border: 1px #555;
+    border-radius: 50%;
+    box-shadow:3px 3px 6px #0a0a0a;
+    opacity: 0.8;
 }

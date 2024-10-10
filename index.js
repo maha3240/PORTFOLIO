@@ -44,15 +44,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-let divs = document.querySelectorAll('section.div');
-let navlinks = document.querySelectorAll('nav a');
 
-window.onscroll = () => {
-    let top = window.scrollY;  // Get the current scroll position
-    divs.forEach(sec => {
-        let offset = sec.offsetTop;  // Get the offset of the section
-        let height = sec.offsetHeight;  // Get the height of the section
-        let id = sec.getAttribute('id');  // Get the id of the section
+window.addEventListener('scroll',function(){
+let divs = document.querySelectorAll('.scrollable_content div');
+let navlinks = document.querySelectorAll('nav a');
+    let top = window.scrollY;  
+    divs.forEach(div => {
+        let offset = div.offsetTop - 60;  
+        let height = div.offsetHeight;  
+        let id = div.getAttribute('id');  
 
         // Check if the section is in the viewport
         if (top >= offset && top < offset + height) {
@@ -68,7 +68,7 @@ window.onscroll = () => {
             }
         }
     });
-};
+});
 
 
 

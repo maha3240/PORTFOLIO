@@ -14,27 +14,25 @@ nav .abt_contact{
     margin: 3% 3%;
     overflow-y: auto;
     scroll-behavior: smooth;
-    scroll-snap-type: mandatory Y;
     position: relative;
     top: 14%;
 }
-.scrollable_content div{
-    height: 90%;
-    width: 60%;
-    padding: 20px;
+
+#me{
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
-    margin: 5% 20% 7% 20%;
     border-radius: 20px;
     z-index: 90;
     box-shadow: 3px 3px 6px black;
     border: rgba(255, 255, 255, 0.7); /* Semi-transparent white border */
     position: relative;
+    margin: 5% 20% 7% 20%;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;    
+    height: 90%;
+    width: 60%;
+    padding: 20px;
 }
-
 .scrollable_content::-webkit-scrollbar-button{
     display: none;
 }
@@ -113,9 +111,9 @@ nav .abt_contact{
     text-shadow: #111111;
 }
 
-.attributes span{
+.attributes span,#skills span,.Lang span{
     line-height: 31px;
-    font-family: 'Qwitcher_Gryphrn';
+    font-family: 'Qwitcher_Gryphen';
     font-style: italic;
 }
 .attributes span i{
@@ -134,4 +132,140 @@ nav .abt_contact{
     border-radius: 50%;
     box-shadow:3px 3px 6px #0a0a0a;
     opacity: 0.8;
+}
+#skills{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 10%;
+    margin: 5% 20% 7% 20%;
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    width: 60%;
+    padding: 20px;
+}
+.skills_content, .education_content{
+    position: relative;
+    width: 70%;
+    margin-right:30%;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    line-height: 38px;
+}
+.pLang , .Lang{
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+#skills h1,h2, .education_content h1,h2{
+    font-style: italic;
+    font-family:'Qwitcher_Gryphen';
+    font-weight: 700;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #111111;
+    margin:12px;
+    width: 80%;
+}
+#skills h1, .education_content h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 4%;
+}
+#skills h2 , .education_content h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+#education{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 10%;
+    margin: 5% 20% 7% 20%;
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    width: 60%;
+    padding: 20px;
+}
+
+.institutes,.Lang span{
+    position: relative;
+    left: 6%;
+    font-size: 1rem;
+
+}
+.Lang{
+    position: relative;
+    top: 52%;
+    right: 15%;
+}
+.institutes{
+    line-height: 35px;
+    font-family: 'Qwitcher_Gryphen';
+    font-style: italic;
+    margin-bottom: 25px;
+}
+.ins_start{
+    margin-right: 12PX;
+}
+
+#projects{
+    display: flex;
+    position: relative;
+    top: 3%;
+    left: 7%;
+    margin: 10%;
+    height: 90%;
+    width: 80%;
+    flex-wrap: wrap;
+
+}
+#projects div{
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px black;
+    border: rgba(255, 255, 255, 0.7); /* Semi-transparent white border */
+    position: relative;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    width: 40%;
+    
+    
+}
+
+#projects div a{
+    position: relative;
+    top: 5%;
+    left: 10%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 500px;
+    font-family: 'Qwitcher_Gryphen';
+    text-shadow:2px 2px 4px #111111;
+    text-transform: uppercase;
+    margin-right: 15px;
+    width: 50%;
+    
+}
+.myntra_pic{
+    position: relative;
+    margin: 20px;
+    height: 150px;
+    width: 110px;
+    z-index: 2000;
+    top: 20%;
+}
+#projects  img{
+    position: relative;
+    margin: 20px;
+    height: 150px;
+    width: 110px;
+    margin-left: 40%;
 }

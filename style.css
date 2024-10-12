@@ -108,7 +108,7 @@ nav{
         color: #fca61f;
         font-size: 1rem;
         font-weight: bold;
-        animation: blink 2s infinite; /* 1 second duration, repeats infinitely */
+        animation: blink 1s infinite; /* 1 second duration, repeats infinitely */
          
       }
 

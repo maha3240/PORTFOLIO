@@ -7,7 +7,6 @@
 } 
 
 body{
-    background-color: rgb(168, 196, 196);
     width: 100%;
     height: auto;
     overflow:hidden ;
@@ -30,10 +29,10 @@ body{
 .overlay {
     z-index: 2;
     position: absolute;
-    top: 0;
+    top: 9%;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(19, 15, 15, 0.9); 
 }
 nav{
@@ -287,6 +286,8 @@ section .content{
 
 .main-content p{
     font-size: clamp(1rem, 1rem + 5vw, 1.2rem);
+    font-family: 'Qwitcher-Gryphen';
+    text-shadow: 1px 1px 2px #111111;
 }
 
 .main-content .buttons{
@@ -348,18 +349,40 @@ section .content{
     height: 60%;
     justify-content: space-between;
 }
-
+.copyrights{
+    z-index: 3000;
+    position: fixed;
+    justify-content: end;
+    width: 100%;
+    height: 20px;
+    bottom: 2px;
+    padding: 5px;
+    display: flex;
+    background:linear-gradient(45deg,rgb(0,0,0),transparent);
+    font-size: 0.7rem;
+    border: none;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.copyrights i{
+    margin-left: 2px;
+    font-family: 'Qwitcher-Gryphen';
+}
 @media (max-width:768px){
+
+    .baground{
+        background-image: none;
+        background-color: rgba(19, 15, 15, 0.9);
+    }
     .links{
         display: none;
     }
 
-    .nav-container button{
+    .nav-container #btn{
         display: none;
     }
-
-    nav i{
-        display: block;
+    nav .hamburg{
+        display: flex;
+        left: 80%;
     }
 
     .nav-container .logo{
@@ -373,22 +396,41 @@ section .content{
         width: 100%;
         flex-direction: column-reverse;
     }
-
+    .image{
+        display: none;
+    }
     .image img{
-        width: 75%;
+        display: none;
     }
 
     .content .main-content{
         max-width: 350px;
-        align-items: center;
+        align-items: start;
         width: 100%;
+        position: 
+        relative;
+        bottom: 25%;
     }
 
     .main-content p{
         margin: 5px;
-        padding: 5px;
-        font-size: 0.5rem;
-        text-align: center;
+        font-size:1.2rem;
+        text-align: start;
     }
-
+    .icons button{
+       width: 3.2rem ;
+       height: 2.2rem;
+    }
+    .main-content .buttons button{
+        width: 90px;
+    }
+    .dropdown div .dropmenu{
+        width: 40%;
+        padding-top: 10%;
+    }
+    .dropmenu i{
+        font-size: 1.4rem;
+        color: black;
+    }
+    
 }

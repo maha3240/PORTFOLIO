@@ -166,6 +166,7 @@ textarea{
     box-shadow: 2px 2px 4px #111111;
     background:linear-gradient(45deg,rgba(0,0,0,0.6),transparent);
 }
-#msg{
-
+.contact_right #msg{
+    color: #183d08;
+    display: block;
 }

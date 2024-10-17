@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
 </head>
@@ -21,26 +23,49 @@
                 <a href="about.html">About </a>
                 <a href="services.html">Services</a>
             </div>
-            <button id="btn" class="open_form"><a href="contact_form.html">Contact me</a></button>
+            <button id="btn"><a href="contact_form.html">Contact me</a></button>
         <div class="dropdown">
             <div><button class="hamburg">☰</button>
                 <div class="dropmenu">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About me</a>
-                    <a href="services.html">Services</a>    
-                    <button class="open_form"><a href="contact_form.html">Contact ME</a></button>
+                    <a href="index.html" class="hov_link">Home</a>
+                    <a href="about.html" class="hov_link">About me</a>
+                    <a href="services.html" class="hov_link">Services</a>    
+                    <button id="btn"><a href="contact_form.html">Contact ME</a></button>
                     <i class="fa-solid fa-xmark" id="cancel"></i>
                 </div>
         </div>
         </div>
         </nav>
         <section class="contact_me">
-            <div class="contact_left">
-                <h1>contact me</h1>
-                <span><i class="fa-thin fa-paper-plane"></i>muskanakram91@gmail.com</span>
-                <span><i class="fa-thin fa-phone"></i>03369891176</span>
+            <h1>contact me</h1>
+            <div class="contact_row">
+                <div class="contact_left">
+                    <div class="feilds">
+                        <h2>EMAIL</h2>
+                        <i class="fa-solid fa-paper-plane"></i><span>muskanakram91@gmail.com</span>
+                    </div>
+                    <div class="feilds">
+                        <h2>PHONE</h2>
+                        <i class="fa-solid fa-phone"></i><span>03369891176</span>
+                    </div>
+                    <div class="icons">
+                        <button><a href="https://github.com/maha3240"><i class="fa-brands fa-github"></i></a></button>
+                        <button><a href="https://www.linkedin.com/in/muskan-akram-746b452a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a></button>
+                        <button><a href="https://www.instagram.com/muskanawaan390?igsh=MWJ1cHNuNHBsaXBzcg=="><i class="fa-brands fa-instagram"></i></a></button>
+                        <button><a href="https://www.snapchat.com/add/leena242056?share_id=97XMh0t_fIE&locale=en-US"><i class="fa-brands fa-twitter"></i></a></button>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn3"><a href="">Downlod CV</a><i class="fa-solid fa-file-arrow-down"></i></button>
+                    </div>
+                </div>
+            <div class="contact_right">
+                <form action="contact_form.html" >
+                    <input type="text" name="NAME :" placeholder="your name" required>
+                    <input type="email" placeholder="your email address" required>
+                    <textarea name="Message" placeholder="your Message" required></textarea>
+                    <input type="submit" class="submit">
+                </form>
             </div>
-            <div class="contact_right"></div>
 
         </section>
         

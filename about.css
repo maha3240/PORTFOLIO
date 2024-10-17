@@ -1,5 +1,5 @@
 nav .abt_contact{
-    left: 10%;
+    left: 8%;
 }
 .section_abt{
     display: flex;
@@ -8,8 +8,7 @@ nav .abt_contact{
 }
 .scrollable_content {
     height: 500px;
-    width: 97%; /* Adjust to your desired height */
-     /* Enable scrolling if content overflows */
+    width: 97%; 
     padding: 20px;
     margin: 3% 3%;
     overflow-y: auto;
@@ -156,7 +155,7 @@ nav .abt_contact{
     flex-direction: column;
     text-transform: capitalize;
 }
-#skills h1,h2, .education_content h1,h2, #projects h1{
+#skills h1,#skills h2, .education_content h1,.education_content h2, #projects h1,.feilds{
     font-style: italic;
     font-family:'Qwitcher_Gryphen';
     font-weight: 700;
@@ -345,20 +344,22 @@ nav .abt_contact{
     text-shadow:2px 2px 4px #0a0a0a;
 }
 @media (max-width:768px){
-
+    nav{
+        position: fixed;
+    }
     nav .abt_contact{
         display: none;
     }
     .scrollable_content{
+        height: 700px;
         display: flex;
         flex-basis: 100%;
         flex-direction: column;
         justify-content: start;
-        margin: 0;
         top: 4%;
         left: 0;
         width: 100%;
-        margin: 0;
+        margin: 0 0 20% 0;
         padding: 0;
     }
     
@@ -395,6 +396,7 @@ nav .abt_contact{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
+        
     }
     #projects .work{
         display: flex;
@@ -408,5 +410,8 @@ nav .abt_contact{
     .btn2{
         width: 40%;
         margin: 0;
+    }
+    .copyrights {
+        background: none;
     }
     }

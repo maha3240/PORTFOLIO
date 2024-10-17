@@ -130,12 +130,16 @@ nav button{
 }
 nav button a{
     text-decoration: none;
+    color: white;
 }
 
 nav button:hover{
     background-color:white;
     color: #fca61f;
     border:2px solid #fca61f;
+}
+nav button a:hover{
+    color: #fca61f;
 }
 
 nav i{
@@ -192,7 +196,7 @@ nav .dropmenu.visible{
     visibility: visible;
 }
 
-.dropmenu a{
+.dropmenu .hov_link{
     font-size: 1.4rem;
     text-align: center;
     width: 100%;
@@ -202,7 +206,7 @@ nav .dropmenu.visible{
     transition: 0.3s linear;
 }
 
-.dropmenu a:hover{
+.dropmenu .hov_link:hover{
     background-color: black;
     color: white;
 }
@@ -373,8 +377,12 @@ section .content{
 @media (max-width:768px){
 
     .baground{
+        height: 100vh;
         background-image: none;
         background-color: rgba(19, 15, 15, 0.9);
+    }
+    .overlay{
+        height: 100vh;
     }
     .links{
         display: none;

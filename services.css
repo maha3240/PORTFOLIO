@@ -1,6 +1,5 @@
-.services_content h1{
+.services_content h1,.contact_me h1{
     font-size: 4rem;
-    margin-bottom: 30px;
     position: relative;
     bottom: 4%;
     font-style: italic;
@@ -8,10 +7,12 @@
     font-weight: 700;
     color: whitesmoke;
     text-shadow: 2px 2px 6px #111111;
-    margin: 42px;
     width: 40%;
     text-transform: capitalize;
     left: 10%;
+}
+.services_content h1{
+    margin: 42px;
 }
 .service_elements{
     display: grid;
@@ -76,4 +77,91 @@
     .service_elements div{
         margin-top: 40px;
     }
+}
+
+/*************CONTACT ME**************/
+.contact_me h1{
+    margin: 32px;
+}
+.contact_row{
+    padding-top: 20px;
+    height: 60vh;
+    display: flex;
+    box-sizing: border-box;
+    border:none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #111111;
+    width: 60%;
+    margin: 0 20%;
+    background:linear-gradient(45deg,rgba(0,0,0,0.6),transparent);
+}
+.contact_left{
+    display:flex;
+    flex-direction: column;
+}
+.contact_left div{
+    display: flex;
+    padding: 10px;
+}
+.feilds i{
+    margin: 0 10px 0 32px;
+    text-shadow:1px 1px 2px #fca61f;
+}
+.feilds h2{
+    font-size: 1.2rem;
+    font-family: 'Qwitcher_Gryphen';
+    font-weight: 700;
+    color: whitesmoke;
+}
+.contact_left .btn3, .submit{
+    width: 120px;
+    height: 60px;
+    background-color:#fca61f;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 700;
+    font-family: 'Qwitcher-Gryphen';
+    border:none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #111111;
+    color: whitesmoke;
+    background:linear-gradient(45deg,rgba(248, 163, 26, 0.6),transparent);
+}
+.btn3 a{
+    text-decoration: none;
+}
+.btn3 i{
+    margin-left: 5px;
+}
+.contact_right{
+    width: 50%;
+    justify-content: space-around;
+    display: flex;
+}
+.contact_right form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: space-evenly;    
+}
+input{
+    margin-top: 22px;
+    height: 40px;
+    padding: 10px;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #111111;
+    background:linear-gradient(45deg,rgba(0,0,0,0.6),transparent);
+}
+textarea{
+    margin: 12px 0;
+    min-height: 100px;
+    max-width: 100%;
+    padding: 10px;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #111111;
+    background:linear-gradient(45deg,rgba(0,0,0,0.6),transparent);
 }

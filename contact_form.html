@@ -59,12 +59,13 @@
                     </div>
                 </div>
             <div class="contact_right">
-                <form action="contact_form.html" >
-                    <input type="text" name="NAME :" placeholder="your name" required>
-                    <input type="email" placeholder="your email address" required>
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="NAME" placeholder="your name" required>
+                    <input type="email" name="EMAIL" placeholder="your email address" required>
                     <textarea name="Message" placeholder="your Message" required></textarea>
                     <input type="submit" class="submit">
                 </form>
+                <span id="msg">hi</span>
             </div>
 
         </section>
@@ -73,5 +74,16 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="index.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwAoIapM6X-Y4dOGxgKTDFa8JZA04leqIC1THTwUIdZ_K3r0JCaT3sEJ-IfRfXW7I0R/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>

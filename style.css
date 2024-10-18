@@ -399,6 +399,7 @@ section .content{
         left: 5px;
     }
     nav .dropmenu{
+        justify-content: start;
         background:linear-gradient(45deg,rgba(248, 163, 26, 0.6),transparent);
 
     }

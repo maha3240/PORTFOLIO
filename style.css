@@ -180,7 +180,7 @@ nav .dropmenu {
     right: 7px;
     backdrop-filter: blur(2px);
     width: 18%;
-    height: auto;
+    height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,7 +188,7 @@ nav .dropmenu {
     transform: translateY(-300px);
     z-index: 1000;
     visibility: hidden;
-    
+    background:linear-gradient(45deg,rgba(0 ,0 ,0, 0.6),transparent);
 }
 
 nav .dropmenu.visible{
@@ -200,7 +200,7 @@ nav .dropmenu.visible{
     font-size: 1.4rem;
     text-align: center;
     width: 100%;
-    color: black;
+    color: whitesmoke;
     padding: 10px 0;
     text-decoration: none;
     transition: 0.3s linear;
@@ -398,7 +398,10 @@ section .content{
         position: absolute;
         left: 5px;
     }
+    nav .dropmenu{
+        background:linear-gradient(45deg,rgba(248, 163, 26, 0.6),transparent);
 
+    }
     .content{
         margin-top: -100px;
         display: flex;

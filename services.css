@@ -170,3 +170,60 @@ textarea{
     color: #183d08;
     display: block;
 }
+@media (max-width:768px){
+    .contact_me{
+        width: 100%;
+        height: 80%;
+    }
+    .contact_me h1{
+        font-size: 1.8rem;
+        margin-bottom: 0;
+        margin-left: 5px;
+        padding: 0;
+    }
+    .contact_row{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
+        height: 92vh;
+    }
+    .contact_right, .contact_left{
+        width: 100%;
+        height: 30%;
+    }
+    .contact_left{
+        font-size: 0.8rem;
+        margin:16px 0;
+        padding: 0;
+    }
+    .feilds{
+        margin: 0 5px;
+    }
+    .feilds h2{
+        font-size: 1rem;
+    }
+    .icons button{
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        margin: 0 3px;
+    }
+    .contact_left .btn3{
+        width: 80px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    .btn3 a{
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 200;
+        font-family: 'Qwitcher-Gryphen';
+    }
+    .contact_right{
+        margin-left: 5px;
+    }
+    .contact_right form{
+        width: 80%;
+    }
+}

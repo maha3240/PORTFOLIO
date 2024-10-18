@@ -364,54 +364,75 @@ nav .abt_contact{
     }
     
     #me{
-        margin: 5px;
-        width: 100%;
-        padding: 5px;
+        width: 97%;
+        margin-left: 10px;
+        padding: 10px;
     } 
     #me p{
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
     .attributes{
-        font-size: 1.3rem;
+        font-size: 1rem;
+        font-family: 'Qwitcher-Gryphen';
+        font-style: italic;
         text-shadow: 1px 1px 2px #111111;
         
     }
     .image_abt img{
         display: block;
-        width: 38%;
-        height: 49%;
-        left: 57%;
-        bottom: 32%;
-        border-radius: 23%;
+        width: 35%;
+        height: 60%;
+        left: 62%;
+        bottom: 55%;
+        border-radius: 5px;
         text-shadow: 1px 1px 2px #fca61f;
 
     }
     #me,#skills,#education,#projects{
         margin: 30% 0 0 0 ;
+
     }
-    #skills h2{
+    #education h1,#projects h1{
+        font-size: 2rem;
+    }
+    #skills h2,#education h2{
         font-size: 1.2rem;
+        font-family: 'Qwitcher-Gryphen';
+        margin-left: 10px;
     }
     #projects{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
+        top: 15%;
         
+    }
+    #projects h1{
+        margin-bottom: 0;
     }
     #projects .work{
         display: flex;
         width: 100%;
-        height: 60%;
+        height: 64%;
     }
     .Lang{
         left: 25%;
         bottom: 5%;
     }
+    .skills_content span{
+        font-size: 1rem;
+    }
+    .pLang{
+        font-size: 1rem;
+        top: 20%;
+        position: relative;
+    }
+    .pLang span, .Lang span{
+        margin-left: 15px;
+        font-style: italic;
+    }
     .btn2{
         width: 40%;
         margin: 0;
-    }
-    .copyrights {
-        background: none;
     }
     }

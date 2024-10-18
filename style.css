@@ -318,7 +318,9 @@ section .content{
     transform: 0.2s linear;
     cursor: pointer;
 }
-
+.buttons button a{
+    text-decoration: none;
+}
 .buttons button:hover{
     box-shadow: 2px 2px 30px #fca61f;
 }
@@ -376,13 +378,9 @@ section .content{
 }
 @media (max-width:768px){
 
-    .baground{
-        height: 100vh;
-        background-image: none;
-        background-color: rgba(19, 15, 15, 0.9);
-    }
+
     .overlay{
-        height: 100vh;
+        position: fixed;
     }
     .links{
         display: none;
@@ -443,5 +441,7 @@ section .content{
         font-size: 1.4rem;
         color: black;
     }
-    
+    .copyrights{
+        position: fixed;
+    }    
 }
